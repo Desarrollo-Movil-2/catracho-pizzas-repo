@@ -1,0 +1,49 @@
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 45%;
+}
+.card-title{
+    color: rgb(190, 21, 27);
+    text-align: center;
+}
+.card-footer{
+    border-top: solid gray 1px;
+    display: flex;
+    flex-direction: column;
+}
+.w-50{
+    width: 50%;
+}
+.price-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+#item-price{
+    color: rgb(190, 21, 27) ;
+}
+.boton{
+    --background: var(--ion-color-custom-red, #BE151B);
+    --border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 25% 25% 25% 25%;
+   
+}
+.container-add{
+    display: flex;
+}
+.container-add>p{
+    font-weight: bold;
+    padding: 5px;
+}
+
+@media(max-width:520px){
+    .card{
+        width: 90%;
+    }
+}
