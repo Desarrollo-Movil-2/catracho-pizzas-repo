@@ -17,14 +17,28 @@
        <div class="price-container">
         <p>Cantidad: </p>
         <div class="container-add">
-          <ion-button class="boton">-</ion-button>
-          <p>1</p>
-          <ion-button class="boton">+</ion-button>
+          <ion-button class="boton" (click)="decrement()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 12l14 0" />
+            </svg>
+          </ion-button>
+          <p>{{ count }}</p>
+          <ion-button class="boton" (click)="increment()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 5l0 14" />
+              <path d="M5 12l14 0" />
+            </svg>
+          </ion-button>
         </div>
+        
        </div>
       </div>
-      <div class="w-50 ">
-
+      <div class="div-btn-ordenar">
+        <ion-button class="btn-ordenar" (click)="orderProduct()">
+          ORDERNAR
+        </ion-button>
       </div>
     </div>
   </ion-card>

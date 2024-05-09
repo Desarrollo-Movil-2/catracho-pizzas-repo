@@ -11,8 +11,8 @@
 }
 .card-footer{
     border-top: solid gray 1px;
+    font-size: 15px;
     display: flex;
-    flex-direction: column;
 }
 .w-50{
     width: 50%;
@@ -26,9 +26,30 @@
 #item-price{
     color: rgb(190, 21, 27) ;
 }
+.div-btn-ordenar{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.btn-ordenar{
+    color: #fff;
+    font-weight: bold!important;
+    --background: var(--ion-color-custom-green,#70A301);
+}
 .boton{
-    --background: var(--ion-color-custom-red, #BE151B);
+    --background: var(--ion-color-custom-gray, #5C544C);
     --border-radius: 100%;
+    --width: 28px; 
+    --padding-top: 0px!important;
+    --padding-bottom:  0px!important;
+    --padding-start:  0px!important;
+    --padding-end: 0px!important; 
+    width: var(--width);
+   
     color: white;
     font-weight: bold;
     border-radius: 25% 25% 25% 25%;
@@ -38,8 +59,8 @@
     display: flex;
 }
 .container-add>p{
-    font-weight: bold;
-    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @media(max-width:520px){
